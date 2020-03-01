@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>	
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/deeplab@0.1.1"> </script>
+<script src="webcam.js"></script>
+</head>
+<body>
+	<div>
+		<div >
+			<video autoplay playsinline muted id="wc" width="513" height="513"></video>
+			<canvas id="output"  width="224" height="224"></canvas>
+		</div>
+        <div >
+		</div>
+	</div>
+	<input type="button" value="Start" id="tooglePredictingButton" onclick="tooglePredicting()" disabled="True"></input>
+	<div id="prediction"></div>
+</body>
+
+<script src="index.js"></script>
+</html>
